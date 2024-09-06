@@ -5,20 +5,20 @@
 class Colony < Formula
   desc ""
   homepage "https://github.com/konstructio/colony"
-  version "0.0.3"
+  version "0.0.4"
 
   on_macos do
     on_intel do
-      url "https://github.com/konstructio/colony/releases/download/v0.0.3/colony_Darwin_x86_64.tar.gz"
-      sha256 "fbe974c06390c0d0756967993ce2cad52688d78dd3ece708c800f59667cfa091"
+      url "https://github.com/konstructio/colony/releases/download/v0.0.4/colony_Darwin_x86_64.tar.gz"
+      sha256 "7a9e6be94ca06c6bcc13582c325937a8e5e18aa8dc7377126ad4ab4aeba7caca"
 
       def install
         bin.install "colony"
       end
     end
     on_arm do
-      url "https://github.com/konstructio/colony/releases/download/v0.0.3/colony_Darwin_arm64.tar.gz"
-      sha256 "2cd1bf42f1325d8f18f88a92d40f504f74a8a7bf3c44cbe140a235d02d48ba4e"
+      url "https://github.com/konstructio/colony/releases/download/v0.0.4/colony_Darwin_arm64.tar.gz"
+      sha256 "95065dee2cfc3de6e159c169d4dfe4e46393f458ed6b1ea11eae0addec9ba06c"
 
       def install
         bin.install "colony"
@@ -29,8 +29,8 @@ class Colony < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/konstructio/colony/releases/download/v0.0.3/colony_Linux_x86_64.tar.gz"
-        sha256 "618bb8958bad08d95c2f1cc019cb3b4257b55f9e22191ba5f555c4eec1504237"
+        url "https://github.com/konstructio/colony/releases/download/v0.0.4/colony_Linux_x86_64.tar.gz"
+        sha256 "5dfb42bde1c33c6a99ad1b753824759f1cf482d1b3662ee1ebf4dec5c6519ac6"
 
         def install
           bin.install "colony"
@@ -39,8 +39,8 @@ class Colony < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/konstructio/colony/releases/download/v0.0.3/colony_Linux_arm64.tar.gz"
-        sha256 "7d9bf22a5a207801a29da0159267efba671403989e1acf1b6a2206d34dd40be5"
+        url "https://github.com/konstructio/colony/releases/download/v0.0.4/colony_Linux_arm64.tar.gz"
+        sha256 "32ad515c4038998ef1b12c5ad5f5aa5447c843cc93d32325e6dc7a9a1e5cf00e"
 
         def install
           bin.install "colony"
