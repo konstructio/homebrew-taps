@@ -5,20 +5,20 @@
 class Dropkick < Formula
   desc ""
   homepage "https://github.com/konstructio/dropkick"
-  version "0.0.8"
+  version "0.0.9"
 
   on_macos do
     on_intel do
-      url "https://github.com/konstructio/dropkick/releases/download/v0.0.8/dropkick_Darwin_x86_64.tar.gz"
-      sha256 "afa5b7ba5728b35d011f8a4925d23a121ecc96ba06d9d79b11a1190244644822"
+      url "https://github.com/konstructio/dropkick/releases/download/v0.0.9/dropkick_Darwin_x86_64.tar.gz"
+      sha256 "0bdb318789613bf5ca40b5c242a42bc31fd4c854ef2be200a176732ad4fd8519"
 
       def install
         bin.install "dropkick"
       end
     end
     on_arm do
-      url "https://github.com/konstructio/dropkick/releases/download/v0.0.8/dropkick_Darwin_arm64.tar.gz"
-      sha256 "1832674497f95e3652fa9b4b087342a23b61d2eff977eb6ccd035ed18147ed5a"
+      url "https://github.com/konstructio/dropkick/releases/download/v0.0.9/dropkick_Darwin_arm64.tar.gz"
+      sha256 "d11d31dd519549b370d30bf8c2a8e6b530e08c280f8352cb9b7cb48d772ac9cb"
 
       def install
         bin.install "dropkick"
@@ -29,8 +29,8 @@ class Dropkick < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/konstructio/dropkick/releases/download/v0.0.8/dropkick_Linux_x86_64.tar.gz"
-        sha256 "b54e74628dcb3b2d1d8c1db4898800f3f7421bdf80f1635ce7c17888e9763546"
+        url "https://github.com/konstructio/dropkick/releases/download/v0.0.9/dropkick_Linux_x86_64.tar.gz"
+        sha256 "4ba0601cf28e81defa94e84e6b40f6bff1f05de7a829861fc92dc583755ea751"
 
         def install
           bin.install "dropkick"
@@ -39,8 +39,8 @@ class Dropkick < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/konstructio/dropkick/releases/download/v0.0.8/dropkick_Linux_arm64.tar.gz"
-        sha256 "ddd063b4b02a3dfc63d7c61baaa19617d2b65bdab5f29c3acbf6fca353b3ecc1"
+        url "https://github.com/konstructio/dropkick/releases/download/v0.0.9/dropkick_Linux_arm64.tar.gz"
+        sha256 "9b13712975d17cc9aeabac583970f0aa37cc1a27346037e828eac03c248fc0fb"
 
         def install
           bin.install "dropkick"
