@@ -5,22 +5,22 @@
 class Kubefirst < Formula
   desc ""
   homepage "https://github.com/konstructio/kubefirst"
-  version "2.8.0"
+  version "2.8.1"
 
   depends_on "aws-iam-authenticator"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/konstructio/kubefirst/releases/download/v2.8.0/kubefirst_2.8.0_darwin_amd64.tar.gz"
-      sha256 "0f57e40aa4380fa4d051ef893d4d7780b0814a60ed18f6428ee8b30a8d56c54d"
+      url "https://github.com/konstructio/kubefirst/releases/download/v2.8.1/kubefirst_2.8.1_darwin_amd64.tar.gz"
+      sha256 "8a5408d2748f20d49deb35d02fed2e25144dbee625167f7ed25d6c56d278f3aa"
 
       def install
         bin.install "kubefirst"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/konstructio/kubefirst/releases/download/v2.8.0/kubefirst_2.8.0_darwin_arm64.tar.gz"
-      sha256 "94aaec426b73f093782db6491bbcf1e5e60daf0667a85272db3e4bd7c79c97b3"
+      url "https://github.com/konstructio/kubefirst/releases/download/v2.8.1/kubefirst_2.8.1_darwin_arm64.tar.gz"
+      sha256 "9cd5fade29e7a17d1ebb99e24c22a5df1b36bd21eb6d8ad202059712687f6385"
 
       def install
         bin.install "kubefirst"
@@ -31,8 +31,8 @@ class Kubefirst < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/konstructio/kubefirst/releases/download/v2.8.0/kubefirst_2.8.0_linux_amd64.tar.gz"
-        sha256 "dba72f4f4d7c8e1012bc6e70d06f0d797ba3dc97512e31dde098b5e33de6636b"
+        url "https://github.com/konstructio/kubefirst/releases/download/v2.8.1/kubefirst_2.8.1_linux_amd64.tar.gz"
+        sha256 "be5cd5092f67e0d9b8ad046b7a7abf0c80d0c89c9e932be57d684a8d36337b84"
 
         def install
           bin.install "kubefirst"
@@ -41,8 +41,8 @@ class Kubefirst < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/konstructio/kubefirst/releases/download/v2.8.0/kubefirst_2.8.0_linux_arm64.tar.gz"
-        sha256 "32c77055ee43f6154f48029fb4e955e3223ebaefd889d61247340df56a9a8979"
+        url "https://github.com/konstructio/kubefirst/releases/download/v2.8.1/kubefirst_2.8.1_linux_arm64.tar.gz"
+        sha256 "29e788fa6cf11c69b48184fa7e43f4e0d34975aa52c41ed3b4ca5e700dfb7e13"
 
         def install
           bin.install "kubefirst"
