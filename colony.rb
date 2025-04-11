@@ -5,20 +5,20 @@
 class Colony < Formula
   desc ""
   homepage "https://github.com/konstructio/colony"
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
-    on_intel do
-      url "https://github.com/konstructio/colony/releases/download/v0.1.0/colony_Darwin_x86_64.tar.gz"
-      sha256 "a45452b1312047b160f5380b57fe49c1a230de05d5caaa7c1441e42576732a80"
+    if Hardware::CPU.intel?
+      url "https://github.com/konstructio/colony/releases/download/v0.2.0/colony_Darwin_x86_64.tar.gz"
+      sha256 "6e7f1b134d61be34ad537cea8cee6d02e08f93506c5c8af374cab1a1518f000a"
 
       def install
         bin.install "colony"
       end
     end
-    on_arm do
-      url "https://github.com/konstructio/colony/releases/download/v0.1.0/colony_Darwin_arm64.tar.gz"
-      sha256 "1fc585b8dbd742fa137d0c15379f85583750ebe6c7544dad73e655a92b7a946c"
+    if Hardware::CPU.arm?
+      url "https://github.com/konstructio/colony/releases/download/v0.2.0/colony_Darwin_arm64.tar.gz"
+      sha256 "0c34dde40013722e6913f7c9bacd9b028009ae2d49c80509a15440119e15b33f"
 
       def install
         bin.install "colony"
@@ -27,20 +27,20 @@ class Colony < Formula
   end
 
   on_linux do
-    on_intel do
+    if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/konstructio/colony/releases/download/v0.1.0/colony_Linux_x86_64.tar.gz"
-        sha256 "121a79201b744917a5dcf24adca4a9ab7d875e5946f8c4caf1e7a1c25ccb59ee"
+        url "https://github.com/konstructio/colony/releases/download/v0.2.0/colony_Linux_x86_64.tar.gz"
+        sha256 "1d7e99e1f7a2ba382cae31255d1f163d60f7f19f3258617719ff388ca27e29ba"
 
         def install
           bin.install "colony"
         end
       end
     end
-    on_arm do
+    if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/konstructio/colony/releases/download/v0.1.0/colony_Linux_arm64.tar.gz"
-        sha256 "7c37d932f744a35eafdc963818245d49af2084191f35fdd5c3ec882dcbd13ea6"
+        url "https://github.com/konstructio/colony/releases/download/v0.2.0/colony_Linux_arm64.tar.gz"
+        sha256 "e9694579c050a9eae6a5608ee5ddc80158e0e5cace185b9858b6259444dc84c6"
 
         def install
           bin.install "colony"
